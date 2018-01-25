@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../bs/css/bootstrap.css">
+    <script src="../bs/js/bootstrap.js"></script>
+    <style>
+        body {
+            padding-top: 70px;
+            /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        }
+    </style>
+</head>
+<body>
+<script>
+    $(function(){
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./Announcement.html">Fancy Learning System</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="./Announcement.html">Announcement</a>
+                </li>
+                <li>
+                    <a href="./Files.html">Files</a>
+                </li>
+                <li>
+                    <a href="./Quiz.html">Quiz</a>
+                </li>
+                <li>
+                    <a href="./Grades.html">Grades</a>
+                </li>
+                <li>
+                    <a href="../index.html">Back</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+    <div class="container">
+        <h2 class='page-header'>Quiz</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Nav tabs -->
+                <ul class='nav nav-tabs'>
+                    <li class="active"><a href="#home" aria-controls="home" data-toggle="tab">Quiz 1</a></li>
+                    <li><a href="#profile" aria-controls="profile" data-toggle="tab">Quiz 2</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class='tab-content'>
+                    <div class="tab-pane fade in active" id='home'>
+                        <br/>
+                        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne2">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                            Question 1: ...
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne2">
+                                    <div class="panel-body">
+                                        <textarea name="" cols="100" rows="10">Answers:</textarea>
+                                        <button class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Submit successfully!">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo2">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                            Question 2: ...
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
+                                    <div class="panel-body">
+                                        <textarea name="" cols="100" rows="10">Answers:</textarea>
+                                        <button class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Submit successfully!">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree2">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                            Question 3: ...
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
+                                    <div class="panel-body">
+                                        <textarea name="" cols="100" rows="10">Answers:</textarea>
+                                        <button class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Submit successfully!">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id='profile'>
+                        <br>
+                        <div class="form-group">
+                            <input type="file"></input>
+                            <p class="help-block">Please upload your group assignment</p>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="../images/ssby.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
